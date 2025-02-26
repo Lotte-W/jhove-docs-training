@@ -12,7 +12,7 @@ The templating is very minimal, it is hsed solely for the headers and footers, a
 {% include header.html %}
 ```
 Where the ```{% ... %}``` lets you know that a snippet of HTML will be loaded from the template file.
-In the 'docs' folder you will find an index.html and this is the 'Home Page' of JHOVE. other files at this level are int he 'root' of the website. There are folders in the 'docs' 'root' with more HTML files, and they will correspond with the URL structure of the website you see in the address bar. So the ```/docs/about``` folder in this project will correspond to the ```http://darrendignam.github.io/about``` public website.
+In the 'docs' folder you will find an index.html and this is the 'Home Page' of JHOVE. other files at this level are int he 'root' of the website. There are folders in the 'docs' 'root' with more HTML files, and they will correspond with the URL structure of the website you see in the address bar. So the ```/docs/about``` folder in this project will correspond to the ```https://darrendignam.github.io/jhove-docs-training/about/``` public website.
 
 ## Making changes
 If you make changes to these files and then push them to GitHub, a 'Workflow' will be initiated on GitHub to test and verify everything, and if those checks pass, the public website will be updated.
