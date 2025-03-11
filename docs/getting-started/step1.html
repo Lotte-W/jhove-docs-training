@@ -1,0 +1,73 @@
+<ul>
+    <li>
+      Format <em>identification</em> is the process of determining the format to
+      which a digital object conforms; in other words, it answers the question:
+      "I have a digital object; what format is it?"
+    </li>
+    <li>
+      <p>
+        Format <em>validation</em> is the process of determining the level of
+        compliance of a digital object to the specification for its purported format,
+        e.g.:
+        "I have an object purportedly of format <em>F</em>; is it?"
+      </p>
+      <p>
+        Format validation conformance is determined at three levels:
+        <em>well-formedness</em>, <em>validity</em>, and <em>consistency</em>.
+      </p>
+      <ol>
+        <li>
+          A digital object is <em>well-formed</em> if it meets the purely
+          syntactic requirements for its format
+        </li>
+        <li>
+          An object is <em>valid</em> if it is well-formed and it meets the
+          higher-level semantic requirements for format validity
+        </li>
+        <li>
+          An object is <em>consistent</em> if it is valid and its internally
+          extracted representation information is consistent with externally
+          supplied representation information
+        </li>
+      </ol>
+      <p>
+        For example, a <a href="/references#tiff6">TIFF</a> object is
+        well-formed if it starts with an 8 byte header followed by a sequence of
+        Image File Directories (IFDs), each composed of a 2 byte entry count and
+        a series of 8 byte tagged entries.
+        The object is valid if it meets certain additional
+        semantic-level rules, such as that an RGB file must have at least three sample
+        values per pixel.
+        The object is consistent with external
+        <a href="/references#z39.87">NISO Z39.87</a> metadata if that
+        metadata is consistent with the representation information of the object
+        that is extracted by JHOVE.
+      </p>
+      <p>
+        The concept of distinguishing between well-formedness (syntactic correctness)
+        and validity (semantic correctness) was
+        taken from <a href="/references#xml">XML</a>.
+      </p>
+    </li>
+    <li>
+      <p>
+        Format <em>characterization</em> is the process of determining the
+        format-specific significant properties of an object of a given format, e.g.:
+        "I have an object of format <em>F</em>; what are its salient properties?"
+      </p>
+      <p>
+        The set of characteristics reported by JHOVE about a digital object
+        is known as the object's <em>representation information</em>,
+        a concept introduced by the Open Archival Information System (OAIS)
+        reference model [<a href="/references#oais">ISO/IEC 14721</a>].
+        The standard representation information reported by JHOVE includes:
+        file pathname or URI,
+        last modification date, byte size, format, format version,
+        MIME type, format profiles, and optionally,
+        CRC32, MD5, and SHA-1 digests
+        [<a href="/references#crc32">CRC32</a>,
+        <a href="/references#md5">MD5</a>,
+        <a href="/references#sha1">SHA-1</a>].
+      </p>
+    </li>
+  </ul>
